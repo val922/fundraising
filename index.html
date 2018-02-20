@@ -28,12 +28,7 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-    Theme Name: Avilon
-    Theme URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
+  
 </head>
 
 <body>
@@ -347,54 +342,107 @@
       Portfolio Section
     ============================-->
 
-    	<section class="col-sm-12 col-md-12 col-lg-12 main-section paddind section-bg" id="Portfolio">
+    	<section class="portfolioContainer col-sm-12 col-md-12 col-lg-12" id="Portfolio">
     		<!--main-section-start-->
     		<div class="section-header container wow fadeInUp delay-01s">
     			<h2 class="section-title">Portfolio</h2>
-          <span class="section-divider"></span>
+				<span class="section-divider"></span>
     			<h6 class="section-description">Fresh portfolio of designs that will keep you wanting more.</h6>
-    			<div class="portfolioFilter">
+    			<div align="center" class="portfolioFilter">
     				<ul class="Portfolio-nav">
-              <li><a><button class="btn active" onclick="filterSelection('all')"> ALL</button></a></li>
-              <li><a><button class="btn" onclick="filterSelection('branding')">BRANDING</button></a></li>
-              <li><a><button class="btn" onclick="filterSelection('webdesign')">WEB DESIGN</button></a></li>
-              <li><a><button class="btn" onclick="filterSelection('printdesign')">PRINT DESIGN</button></a></li>
-              <li><a><button class="btn" onclick="filterSelection('photography')">PHOTOGRAPHY</button></a></li>
+						<button class="btn btn-default filter-button" data-filter="all">All</button>
+						<button class="btn btn-default filter-button" data-filter="photography">Photography</button>
+						<button class="btn btn-default filter-button" data-filter="brandmgmt">Brand Management</button>
+						<button class="btn btn-default filter-button" data-filter="cptbrandn">Corporate Branding</button>
+						<button class="btn btn-default filter-button" data-filter="psnlbrandn">Personal Branding</button>
     				</ul>
     			</div>
-        </div>
+			</div>
+		  <div class="gallery container wow fadeInUp delay-01s" style="padding-left:120px;">	
+           <article class="photo col-lg-4 col-md-4 col-sm-4 col-xs-6  filter  photography">
+            <figure>
+				<a href="img/portfolio/1.jpg" data-title="My Image blah blah" data-lightbox="gallery">
+                <img src="img/portfolio/1.jpg" class="img-responsive" id="IMG"></a>
+			</figure>	
+			</article>
 
-        <div class="portfolioContainer wow fadeInUp delay-04s">
-          <div class="row">
-            <div class="filterDiv Portfolio-box printdesign col-lg-4">
-              <a href="#"><img src="img/portfolio/1.jpg" style="width:90%;" alt=""></a>
-              <p>Print Design</p>
-            </div>
-            <div class="filterDiv Portfolio-box webdesign col-lg-4">
-              <a href="#"><img src="img/portfolio/2.jpg" style="width:90%;" alt=""></a>
-              <p>Web Design</p>
-            </div>
+			<article class="photo col-lg-4 col-md-4 col-sm-4 col-xs-6  filter  brandmgmt">
+				<figure>
+					<a href="img/portfolio/2.jpg" data-title="My Image blah blah" data-lightbox="gallery">
+					<img src="img/portfolio/2.jpg" class="img-responsive" id="IMG"></a>
+				</figure>	
+			</article>
 
-            <div class="filterDiv Portfolio-box branding col-lg-4">
-              <a href="#"><img src="img/portfolio/3.jpg" style="width:90%;" alt=""></a>
-              <p>Branding</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="filterDiv branding Portfolio-box col-lg-4">
-              <a href="#"><img src="img/portfolio/4.jpg" style="width:90%;" alt=""></a>
-              <p>Corporate Branding</p>
-            </div>
-            <div class="filterDiv Portfolio-box branding col-lg-4">
-              <a href="#"><img src="img/portfolio/5.jpg" style="width:90%;" alt=""></a>
-              <p>Branding</p>
-            </div>
-            <div class="filterDiv Portfolio-box photography col-lg-4">
-              <a href="#"><img src="img/portfolio/6.jpg" style="width:90%;" alt=""></a>
-              <p>Personal Photography</p>
-            </div>
-          </div>
-        </div>
+			<article class="photo col-lg-4 col-md-4 col-sm-4 col-xs-6  filter  photography">
+				<figure>
+					<a href="img/portfolio/3.jpg" data-title="My Image blah blah" data-lightbox="gallery">
+					<img src="img/portfolio/3.jpg" class="img-responsive" id="IMG"></a>
+				</figure>	
+			</article>
+
+			<article class="photo col-lg-4 col-md-4 col-sm-4 col-xs-6  filter  psnlbrandn">
+				<figure>
+					<a href="img/portfolio/4.jpg" data-title="My Image blah blah" data-lightbox="gallery">
+					<img src="img/portfolio/4.jpg" class="img-responsive" id="IMG"></a>
+				</figure>
+			</article>
+
+			<article class="photo col-lg-4 col-md-4 col-sm-4 col-xs-6  filter  cptbrandn">
+				<figure>	
+					<a href="img/portfolio/5.jpg" data-title="My Image blah blah" data-lightbox="gallery">
+					<img src="img/portfolio/5.jpg" class="img-responsive" id="IMG"></a>
+				</figure>
+			</article>
+
+			<article class="photo col-lg-4 col-md-4 col-sm-4 col-xs-6  filter  psnlbrandn">
+				<figure>	
+					<a href="img/portfolio/6.jpg" data-title="My Image blah blah" data-lightbox="gallery">
+					<img src="img/portfolio/6.jpg" class="img-responsive" id="IMG"></a>
+				</figure>
+			</article>
+
+			<article class="photo col-lg-4 col-md-4 col-sm-4 col-xs-6  filter  cptbrandn">
+				<figure>
+					<a href="img/portfolio/7.jpg" data-title="My Image blah blah" data-lightbox="gallery">
+					<img src="img/portfolio/7.jpg" class="img-responsive" id="IMG"></a>
+				</figure>
+			</article>
+
+			<article class="photo col-lg-4 col-md-4 col-sm-4 col-xs-6  filter  photography">
+				<figure>	
+					<a href="img/portfolio/8.jpg" data-title="My Image blah blah" data-lightbox="gallery">
+					<img src="img/portfolio/8.jpg" class="img-responsive" id="IMG"></a>
+				</figure>
+			</article>
+
+			<article class="photo col-lg-4 col-md-4 col-sm-4 col-xs-6  filter  psnlbrandn">
+				<figure>	
+					<a href="img/portfolio/9.jpg" data-title="My Image blah blah" data-lightbox="gallery">
+					<img src="img/portfolio/9.jpg" class="img-responsive" id="IMG"></a>
+				</figure>	
+			</article>
+
+			<article class="photo col-lg-4 col-md-4 col-sm-4 col-xs-6  filter  cptbrandn">
+				<figure>
+					<a href="img/portfolio/10.jpg" data-title="My Image blah blah" data-lightbox="gallery">
+					<img src="img/portfolio/10.jpg" class="img-responsive" id="IMG"></a>
+				</figure>
+			</article>
+
+			<article class="photo col-lg-4 col-md-4 col-sm-4 col-xs-6  filter  psnlbrandn">
+				<figure>	
+					<a href="img/portfolio/11.jpg" data-title="My Image blah blah" data-lightbox="gallery">
+					<img src="img/portfolio/11.jpg" class="img-responsive" id="IMG"></a>
+				</figure>
+			</article>
+
+			<article class="photo col-lg-4 col-md-4 col-sm-4 col-xs-6  filter  brandmgmt">
+				<figure>	
+					<a href="img/portfolio/12.jpg" data-title="My Image blah blah" data-lightbox="gallery">
+					<img src="img/portfolio/12.jpg" class="img-responsive" id="IMG"></a>
+				</figure>
+			</article>
+		</div>
       </section>
 
     <!--==========================
@@ -484,7 +532,7 @@
           <div class="col-lg-4 col-md-6 col-sm-2">
             <div class="gallery-item wow fadeInUp">
               <a href="img/gallery/gallery-1.jpg" class="gallery-popup">
-                <img src="img/gallery/gallery-1.jpg" alt="gallery-1">
+                <img src="img/gallery/gallery-1.jpg" alt="gallery-1" id="IMG">
               </a>
             </div>
           </div>
@@ -492,7 +540,7 @@
           <div class="col-lg-4 col-md-6 col-sm-2">
             <div class="gallery-item wow fadeInUp">
               <a href="img/gallery/gallery-2.jpg" class="gallery-popup">
-                <img src="img/gallery/gallery-2.jpg" alt="gallery-2">
+                <img src="img/gallery/gallery-2.jpg" alt="gallery-2" id="IMG">
               </a>
             </div>
           </div>
@@ -500,7 +548,7 @@
           <div class="col-lg-4 col-md-6 col-sm-2">
             <div class="gallery-item wow fadeInUp">
               <a href="img/gallery/gallery-3.jpg" class="gallery-popup">
-                <img src="img/gallery/gallery-3.jpg" alt="gallery-3">
+                <img src="img/gallery/gallery-3.jpg" alt="gallery-3" id="IMG">
               </a>
             </div>
           </div>
@@ -508,7 +556,7 @@
           <div class="col-lg-4 col-md-6 col-sm-2">
             <div class="gallery-item wow fadeInUp">
               <a href="img/gallery/gallery-4.jpg" class="gallery-popup">
-                <img src="img/gallery/gallery-4.jpg" alt="gallery-4">
+                <img src="img/gallery/gallery-4.jpg" alt="gallery-4" id="IMG">
               </a>
             </div>
           </div>
@@ -516,7 +564,7 @@
           <div class="col-lg-4 col-md-6 col-sm-2">
             <div class="gallery-item wow fadeInUp">
               <a href="img/gallery/gallery-5.jpg" class="gallery-popup">
-                <img src="img/gallery/gallery-5.jpg" alt="gallery-5">
+                <img src="img/gallery/gallery-5.jpg" alt="gallery-5" id="IMG">
               </a>
             </div>
           </div>
@@ -524,7 +572,7 @@
           <div class="col-lg-4 col-md-6 col-sm-2">
             <div class="gallery-item wow fadeInUp">
               <a href="img/gallery/gallery-6.jpg" class="gallery-popup">
-                <img src="img/gallery/gallery-6.jpg" alt="gallery-6">
+                <img src="img/gallery/gallery-6.jpg" alt="gallery-6" id="IMG">
               </a>
             </div>
           </div>
@@ -633,53 +681,28 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <!--In-document JavaScript-->
   <script>
-    filterSelection("all")
-    function filterSelection(c) {
-     var x, i;
-     x = document.getElementsByClassName("filterDiv");
-     if (c == "all") c = "";
-     // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-     for (i = 0; i < x.length; i++) {
-       w3RemoveClass(x[i], "show");
-       if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-     }
-    }
+	    $(document).ready(function () {
+		alert("Hello World!")
+        $(".filter-button").click(function () {
+			alert("Hello There!")
+            var value = $(this).attr('data-filter');
 
-    // Show filtered elements
-    function w3AddClass(element, name) {
-     var i, arr1, arr2;
-     arr1 = element.className.split(" ");
-     arr2 = name.split(" ");
-     for (i = 0; i < arr2.length; i++) {
-       if (arr1.indexOf(arr2[i]) == -1) {
-         element.className += " " + arr2[i];
-       }
-     }
-    }
+            if (value == "all") {
+                $('.filter').show('1000');
+            }
+            else {
+                $(".filter").not('.' + value).hide('3000');
+                $('.filter').filter('.' + value).show('3000');
 
-    // Hide elements that are not selected
-    function w3RemoveClass(element, name) {
-     var i, arr1, arr2;
-     arr1 = element.className.split(" ");
-     arr2 = name.split(" ");
-     for (i = 0; i < arr2.length; i++) {
-       while (arr1.indexOf(arr2[i]) > -1) {
-         arr1.splice(arr1.indexOf(arr2[i]), 1);
-       }
-     }
-     element.className = arr1.join(" ");
-    }
+            }
+        });
 
-    // Add active class to the current control button (highlight it)
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-     btns[i].addEventListener("click", function() {
-       var current = document.getElementsByClassName("active");
-       current[0].className = current[0].className.replace(" active", "");
-       this.className += " active";
-     });
-    }
+        if ($(".filter-button").removeClass("active")) {
+            $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+
+    });
   </script>
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -690,10 +713,17 @@
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-
   <!-- To be further adjusted to fill the Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
   <!-- Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="lib/jquery/imagesloaded.pkgd.min.js"></script>
+  <script src="lib/jquery/isotope.pkgd.min.js"></script>
+  <script src="lib/jquery/script.js"></script>
 </body>
 </html>

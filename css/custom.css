@@ -1,0 +1,110 @@
+body {
+	color: #050505;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+	font-size: 18px;
+}
+
+.gallery-title
+{
+    font-family: 'Merriweather', serif;
+    font-size: 36px;
+    color: #202020;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 65px;
+}
+.gallery-title:hover
+{
+    letter-spacing: 4px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.port-image
+{
+    width: 100%;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    box-shadow: 2px 2px 15px 0px #000000;
+}
+.navbar-default .navbar-text {
+    color: #333;
+    font-family: 'Oswald', sans-serif;
+}
+
+.gallery {
+	margin: 0 auto;
+	max-width: 80em;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	transition: all .35s;
+}
+
+.photo {
+	box-sizing: border-box;
+	padding: 0px;
+}
+
+
+
+@media screen and (min-width: 40em) {
+	.photo {
+		width: 50%;
+	}
+	.double {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 60em) {
+	.photo {
+		width: 33%;
+	}
+	.double {
+		width: 66%;
+	}
+}
+
+@media screen and (min-width: 80em) {
+	.photo {
+		width: 25%;
+	}
+	.double {
+		width: 50%;
+	}
+}
+
+
+.photo figure {
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+}
+
+.photo img {
+	display: block;
+	width: 100%;
+}
+
+
+.photo h2 {
+	font-size: 1.2em;
+	font-weight: lighter;
+}
+
+.photo a {
+	color: black;
+}
+
+.photo a:hover figcaption {
+	bottom: 0;
+}
